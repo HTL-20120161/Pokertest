@@ -1,5 +1,5 @@
 
-public class Patch
+public class Batch
 {
 	static Karte[] karten = new Karte[52];
 	public static Karte[] hand = new Karte[5];
