@@ -1,5 +1,5 @@
-
-public class Methoden 
+﻿
+public class Methoden //methoden für Pokertest
 {
 
 	public static boolean Royal (Karte[] hand)
