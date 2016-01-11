@@ -1,5 +1,5 @@
-﻿
-public class Methoden //methoden für Pokertest
+
+public class Methoden 
 {
 
 	public static boolean Royal (Karte[] hand)
@@ -12,7 +12,7 @@ public class Methoden //methoden für Pokertest
 	}
 
 
-	public static boolean Straße(Karte[] hand)
+	public static boolean Stra�e(Karte[] hand)
 	{
 		if((hand[0].nr).equals( "2") && (hand[1].nr).equals( "3") && (hand[2].nr).equals( "4") && (hand[3].nr).equals( "5") && (hand[4].nr).equals( "6"))
 		{
@@ -137,5 +137,3 @@ public class Methoden //methoden für Pokertest
 
 
 }
-
-

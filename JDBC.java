@@ -11,9 +11,10 @@ public class JDBC
 	;
 	 
 	 public static long unicetimestep = System.currentTimeMillis();
+	 
 	public static Analyse a = new Analyse();
 	
-	public static void dadenbankErzeugen()
+	public static void datenbankErzeugen()
 	{
 		Connection c = null;
 	    try {
@@ -31,8 +32,8 @@ public class JDBC
 	{
 		Connection c = null;
 	    Statement stmt = null;
-	    try {
-	      Class.forName("org.sqlite.JDBC");
+	   try {
+	     // Class.forName("org.sqlite.JDBC");
 	      c = DriverManager.getConnection("jdbc:sqlite:poker.db");
 	    // System.out.println("Opened database successfully");
 
@@ -52,9 +53,9 @@ public class JDBC
 	      stmt.executeUpdate(sql);
 	      stmt.close();
 	      c.close();
-	    } catch ( Exception e ) {
-	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      System.exit(0);
+	   } catch ( Exception e ) {
+	     System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+	     System.exit(0);
 	    }
 	   // System.out.println("Table created successfully");
 	  }
@@ -66,14 +67,10 @@ public class JDBC
 		Connection c = null;
 		Statement stmt = null;
 		try {
-			Class.forName("org.sqlite.JDBC");
+			//Class.forName("org.sqlite.JDBC");
 			c = DriverManager.getConnection("jdbc:sqlite:poker.db");
 			c.setAutoCommit(false);
-
-			
-		
-
-			
+						
 
 				stmt = c.createStatement();
 				String sql = "INSERT INTO Versuche (NR,HighKart,Paare,DoppelPaare,Drillinge,Poker,FullHouse,Flush,Straﬂe,StraightFlush,RoyalFlush) " +  

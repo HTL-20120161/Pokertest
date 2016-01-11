@@ -1,6 +1,6 @@
 
 public class Analyse {
-	public static int paar,doppelpaar,drilling,poker,fullhouse,flush,stra√üe,straightFlush,roylflush,highkart;
+	public static int paar,doppelpaar,drilling,poker,fullhouse,flush,straﬂe,straightFlush,roylflush,highkart;
 	public static int z;
 	public static void main(String[] args) 
 	{
@@ -44,15 +44,15 @@ public class Analyse {
 
 			}
 
-			if((m.IstFlush(hand)== true) && (m.Stra√üe(hand)== false))
+			if((m.IstFlush(hand)== true) && (m.Straﬂe(hand)== false))
 			{
 				flz++;
 			}
-			if((m.IstFlush(hand)== true) && (m.Stra√üe(hand)== true))
+			if((m.IstFlush(hand)== true) && (m.Straﬂe(hand)== true))
 			{
 				sfz++;
 			}
-			if((m.IstFlush(hand)== false) && (m.Stra√üe(hand)== true))
+			if((m.IstFlush(hand)== false) && (m.Straﬂe(hand)== true))
 			{
 				sz++;
 			}
@@ -71,11 +71,11 @@ public class Analyse {
 		poker = poz;
 		fullhouse = fhz;
 		flush = flz;
-		stra√üe =sz;
+		straﬂe =sz;
 		straightFlush = sfz;
 		roylflush = rfz;
-		highkart = anzVersuche - paar-doppelpaar-drilling-poker-fullhouse-flush-stra√üe-straightFlush-roylflush;
-		j.dadenbankErzeugen();
+		highkart = anzVersuche - paar-doppelpaar-drilling-poker-fullhouse-flush-straﬂe-straightFlush-roylflush;
+		j.datenbankErzeugen();
 		j.tableErzeugen();
 		j.insertTable();
 		//j.drop();
@@ -88,4 +88,3 @@ public class Analyse {
 
 
 }
-
